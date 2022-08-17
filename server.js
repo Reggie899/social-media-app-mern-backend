@@ -49,7 +49,7 @@ server.use(express.json()); // accessing the request body
     
 
 // defining a PORT variable
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8002;
 
 // listening to the PORT. and running the server
 server.listen(PORT, () => console.log(`Server is listening to port ${PORT} and running`));
